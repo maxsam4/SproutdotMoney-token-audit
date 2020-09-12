@@ -90,6 +90,8 @@ This issue has been fixed.
 
 Some functions like `transfer` are marked as `virtual`, but there's no intention of re-declaring them elsewhere. There is no need to mark them `virtual`.
 
+This issue has been fixed.
+
 #### 4.5 Dust can be wasted in transfers
 
 The calculations done to calculate the transfer amounts can cause some negligible amount of dust to be left behind. This will cause the total supply to no longer be equal to the sum of all balances. The difference will be minute, so it is not a security issue, but it can become an accounting issue.
@@ -97,6 +99,8 @@ The calculations done to calculate the transfer amounts can cause some negligibl
 #### 4.6 `_setupDecimals` can never be called
 
 `_setupDecimals` is declared as an internal function, but it is never used. It can safely be removed.
+
+This issue has been fixed.
 
 #### 4.7 `setNewTDao` requires 51% majority instead of >50% majority
 
